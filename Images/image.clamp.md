@@ -26,6 +26,6 @@ newImage = oldImage.clamp( low, high )
 var OldIMAGE = ee.Image('srtm90_v4');
 var NewIMAGE = OldIMAGE.clamp(200, 650);
 Map.setCenter( -83.518, 39.504, 6 );
-Map.addLayer(OldIMAGE, { min:0, max:1000, palette:['0000aa,00aa00,ffff00,990000'] }, 'Unclamped');
-Map.addLayer(NewIMAGE, { min:0, max:1000, palette:['0000aa,00aa00,ffff00,990000'] }, 'Clamped');
+Map.addLayer(OldIMAGE, { min:0, max:1000, palette:['0000aa','00aa00','ffff00','990000'] }, 'Unclamped');
+Map.addLayer(NewIMAGE, { min:0, max:1000, palette:['0000aa','00aa00','ffff00','990000'] }, 'Clamped');
 ```
